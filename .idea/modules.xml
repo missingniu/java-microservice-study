@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/gift-basic-parent/gift-basic-common/gift-basic-common.iml" filepath="$PROJECT_DIR$/gift-basic-parent/gift-basic-common/gift-basic-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gift-basic-parent/gift-basic-parent.iml" filepath="$PROJECT_DIR$/gift-basic-parent/gift-basic-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gift-support-parent/gift-config-service-10010/gift-config-service-10010.iml" filepath="$PROJECT_DIR$/gift-support-parent/gift-config-service-10010/gift-config-service-10010.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gift-support-parent/gift-eruka-service-10030/gift-eruka-service-10030.iml" filepath="$PROJECT_DIR$/gift-support-parent/gift-eruka-service-10030/gift-eruka-service-10030.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/gift-microservice-ljz.iml" filepath="$PROJECT_DIR$/.idea/gift-microservice-ljz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gift-support-parent/gift-support-parent.iml" filepath="$PROJECT_DIR$/gift-support-parent/gift-support-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gift-support-parent/gift-zuul-service-10040/gift-zuul-service-10040.iml" filepath="$PROJECT_DIR$/gift-support-parent/gift-zuul-service-10040/gift-zuul-service-10040.iml" />
+    </modules>
+  </component>
+</project>
