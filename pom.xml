@@ -11,6 +11,7 @@
     <modules>
         <module>gift-basic-parent</module>
         <module>gift-support-parent</module>
+        <module>gift-user-test</module>
     </modules>
     <!--管理一些公共的属性-->
     <properties>
