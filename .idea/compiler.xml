@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="gift-user-test" />
         <module name="gift-zuul-service" />
         <module name="gift-basic-common" />
         <module name="gift-eruka-service-10030" />
@@ -23,6 +24,7 @@
       <module name="gift-eruka-service-10030" target="1.8" />
       <module name="gift-microservice-ljz" target="1.8" />
       <module name="gift-support-parent" target="1.8" />
+      <module name="gift-user-test" target="1.8" />
       <module name="gift-zuul-service" target="1.8" />
       <module name="gift-zuul-service-10040" target="1.8" />
     </bytecodeTargetLevel>
@@ -36,6 +38,7 @@
       <module name="gift-eruka-service-10030" options="-parameters" />
       <module name="gift-microservice-ljz" options="-parameters" />
       <module name="gift-support-parent" options="-parameters" />
+      <module name="gift-user-test" options="-parameters" />
       <module name="gift-zuul-service" options="-parameters" />
       <module name="gift-zuul-service-10040" options="-parameters" />
     </option>
