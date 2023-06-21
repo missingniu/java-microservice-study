@@ -2,9 +2,17 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/gift-basic-parent/gift-basic-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gift-basic-parent/gift-codegen/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gift-dependcies-parent/gift-dependcies-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gift-dependcies-parent/gift-dependcies-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gift-dependcies-parent/gift-dependcies-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gift-dependcies-parent/gift-dependcies-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gift-parent-test/gift-user-service-codegentest/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gift-support-parent/gift-config-service-10010/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gift-support-parent/gift-eruka-service-10030/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gift-support-parent/gift-zuul-service-10040/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gift-user-parent/gift-user-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gift-user-parent/gift-user-service-20010/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gift-user-test/src/main/java" charset="UTF-8" />
   </component>
 </project>

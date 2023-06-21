@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    active: dev #默认启动是dev
+  cloud:
+    config:
+      uri: http://127.0.0.1:10010 #配置服务器,相当于连上仓库曹
+      label: master #分支
+      name: application-user #gitee上面名称
+      profile: ${spring.profiles.active}
+      #环境 java -jar -d spring.profiles.active=test gift-eureak.jar

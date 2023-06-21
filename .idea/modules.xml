@@ -4,10 +4,23 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/gift-basic-parent/gift-basic-common/gift-basic-common.iml" filepath="$PROJECT_DIR$/gift-basic-parent/gift-basic-common/gift-basic-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/gift-basic-parent/gift-basic-parent.iml" filepath="$PROJECT_DIR$/gift-basic-parent/gift-basic-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gift-basic-parent/gift-codegen/gift-codegen.iml" filepath="$PROJECT_DIR$/gift-basic-parent/gift-codegen/gift-codegen.iml" />
       <module fileurl="file://$PROJECT_DIR$/gift-support-parent/gift-config-service-10010/gift-config-service-10010.iml" filepath="$PROJECT_DIR$/gift-support-parent/gift-config-service-10010/gift-config-service-10010.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gift-dependcies-parent/gift-dependcies-common/gift-dependcies-common.iml" filepath="$PROJECT_DIR$/gift-dependcies-parent/gift-dependcies-common/gift-dependcies-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gift-dependcies-parent/gift-dependcies-core/gift-dependcies-core.iml" filepath="$PROJECT_DIR$/gift-dependcies-parent/gift-dependcies-core/gift-dependcies-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gift-dependcies-parent/gift-dependcies-parent.iml" filepath="$PROJECT_DIR$/gift-dependcies-parent/gift-dependcies-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gift-dependcies-parent/gift-dependcies-service/gift-dependcies-service.iml" filepath="$PROJECT_DIR$/gift-dependcies-parent/gift-dependcies-service/gift-dependcies-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/gift-support-parent/gift-eruka-service-10030/gift-eruka-service-10030.iml" filepath="$PROJECT_DIR$/gift-support-parent/gift-eruka-service-10030/gift-eruka-service-10030.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/gift-microservice-ljz.iml" filepath="$PROJECT_DIR$/.idea/gift-microservice-ljz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gift-parent-test/gift-parent-test.iml" filepath="$PROJECT_DIR$/gift-parent-test/gift-parent-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/gift-support-parent/gift-support-parent.iml" filepath="$PROJECT_DIR$/gift-support-parent/gift-support-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gift-user-parent-website/gift-user-admin/gift-user-admin.iml" filepath="$PROJECT_DIR$/gift-user-parent-website/gift-user-admin/gift-user-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gift-user-parent/gift-user-common/gift-user-common.iml" filepath="$PROJECT_DIR$/gift-user-parent/gift-user-common/gift-user-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gift-user-parent/gift-user-parent.iml" filepath="$PROJECT_DIR$/gift-user-parent/gift-user-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gift-user-parent-website/gift-user-parent-website.iml" filepath="$PROJECT_DIR$/gift-user-parent-website/gift-user-parent-website.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gift-user-parent-website/gift-user-portal/gift-user-portal.iml" filepath="$PROJECT_DIR$/gift-user-parent-website/gift-user-portal/gift-user-portal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gift-user-parent/gift-user-service-20010/gift-user-service-20010.iml" filepath="$PROJECT_DIR$/gift-user-parent/gift-user-service-20010/gift-user-service-20010.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gift-parent-test/gift-user-service-codegentest/gift-user-service-codegentest.iml" filepath="$PROJECT_DIR$/gift-parent-test/gift-user-service-codegentest/gift-user-service-codegentest.iml" />
       <module fileurl="file://$PROJECT_DIR$/gift-user-test/gift-user-test.iml" filepath="$PROJECT_DIR$/gift-user-test/gift-user-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/gift-support-parent/gift-zuul-service-10040/gift-zuul-service-10040.iml" filepath="$PROJECT_DIR$/gift-support-parent/gift-zuul-service-10040/gift-zuul-service-10040.iml" />
     </modules>
