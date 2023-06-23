@@ -15,11 +15,11 @@
         <module name="gift-zuul-service-10040" />
         <module name="gift-user-test" />
         <module name="gift-dependcies-core" />
-        <module name="gift-dependcies-service" />
         <module name="gift-eruka-service-10030" />
         <module name="gift-eruka-service-10020" />
         <module name="gift-user-service-20010" />
         <module name="gift-user-common" />
+        <module name="gift-dependices-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -31,6 +31,7 @@
       <module name="gift-dependcies-core" target="1.8" />
       <module name="gift-dependcies-parent" target="1.8" />
       <module name="gift-dependcies-service" target="1.8" />
+      <module name="gift-dependices-service" target="1.8" />
       <module name="gift-eruka-service-10020" target="1.8" />
       <module name="gift-eruka-service-10030" target="1.8" />
       <module name="gift-microservice-ljz" target="1.8" />
@@ -56,6 +57,7 @@
       <module name="gift-dependcies-core" options="-parameters" />
       <module name="gift-dependcies-parent" options="-parameters" />
       <module name="gift-dependcies-service" options="-parameters" />
+      <module name="gift-dependices-service" options="-parameters" />
       <module name="gift-eruka-service-10020" options="-parameters" />
       <module name="gift-eruka-service-10030" options="-parameters" />
       <module name="gift-microservice-ljz" options="-parameters" />
