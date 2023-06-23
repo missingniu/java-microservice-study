@@ -11,7 +11,7 @@ function msgtemp(msg,className) {
 	return `<div class="alert ${className} alert-dismissible fade in" role="alert">
 		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 		<span aria-hidden="true">&times;</span></button>${msg}</div>`
-};
+}
 (function($){
 	$.fn.extend({
 		/* 重置验证码发送按钮 */

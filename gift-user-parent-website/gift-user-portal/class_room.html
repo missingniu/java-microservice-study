@@ -154,10 +154,10 @@
 								'src': $(e.relatedTarget).data('video'),
 								'poster': $(e.relatedTarget).find('img').attr('src')
 							});
-						};
+						}
 						if ($('.auto-play').hasClass('active')) {
 							$('#video').get(0).play()
-						};
+						}
 					});
 					$('.auto-play').click(function() {
 						$(this).toggleClass('active')

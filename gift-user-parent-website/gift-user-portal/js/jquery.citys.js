@@ -240,7 +240,7 @@
             $.ajax(ajaxConfig).fail(function(p1,p2,p3){
                 ajaxConfig.url = options.spareUrl;
                 $.ajax(ajaxConfig)
-            });;
+            });
         });
     };
 }));

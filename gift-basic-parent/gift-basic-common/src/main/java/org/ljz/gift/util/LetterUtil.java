@@ -21,7 +21,7 @@ public class LetterUtil {
 	private final static String[] lc_FirstLetter = { "a", "b", "c", "d", "e", "f", "g", "h", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "w", "x",
 			"y", "z" };
 
-	private static Map<String, String> exceptWords = new HashMap<String, String>();
+	private static final Map<String, String> exceptWords = new HashMap<String, String>();
 	static {
 		exceptWords.put("a", "庵鳌");
 		exceptWords.put("b", "璧亳並侼別匂");

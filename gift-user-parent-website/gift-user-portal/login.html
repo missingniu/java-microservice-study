@@ -48,7 +48,7 @@
 	                        <label>
 	                        	<input checked="" id="login_checkbox" type="checkbox"><i></i> 30天内免登录
 	                        </label>
-	                        <a href="javascript:;" class="pull-right" id="resetpwd">忘记密码？</a>
+	                        <a href="javascript:" class="pull-right" id="resetpwd">忘记密码？</a>
 	                    </div>
 	                    <!-- 错误信息 -->
 						<div class="form-group">
@@ -62,7 +62,7 @@
 							</div>
 						</div>
 	                    <button class="btn btn-large btn-primary btn-lg btn-block submit" id="login_submit" type="button">登录</button><br>
-	                    <p class="text-center">没有账号？<a href="javascript:;" id="register">免费注册</a></p>
+	                    <p class="text-center">没有账号？<a href="javascript:" id="register">免费注册</a></p>
                     </form>
                     <div class="tabs_div">
 	                    <div class="success-box">
@@ -85,7 +85,7 @@
 			</div>
 			<div class="form-box register">
   				<div class="tabs-nav">
-  					<h2>欢迎注册<a href="javascript:;" class="pull-right fz16" id="reglogin">返回登录</a></h2>
+  					<h2>欢迎注册<a href="javascript:" class="pull-right fz16" id="reglogin">返回登录</a></h2>
   				</div>
   				<div class="tabs_container">
 					<form class="tabs_form" action="index.html" method="post" id="register_form">
@@ -146,7 +146,7 @@
 			</div>
 			<div class="form-box resetpwd">
   				<div class="tabs-nav clearfix">
-  					<h2>找回密码<a href="javascript:;" class="pull-right fz16" id="pwdlogin">返回登录</a></h2>
+  					<h2>找回密码<a href="javascript:" class="pull-right fz16" id="pwdlogin">返回登录</a></h2>
   				</div>
   				<div class="tabs_container">
 					<form class="tabs_form" action="https://rpg.blue/member.php?mod=logging&action=login" method="post" id="resetpwd_form">
@@ -207,7 +207,7 @@
 						case 'register': $('.register').show(); break;
 						case 'resetpwd': $('.resetpwd').show(); break;
 						default: $('.login').show();
-					};
+					}
 					// 发送验证码事件
 					$('.getsms').click(function() {
 						var phone = $(this).parents('form').find('input.phone');

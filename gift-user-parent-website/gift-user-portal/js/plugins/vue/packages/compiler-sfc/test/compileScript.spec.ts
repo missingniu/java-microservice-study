@@ -759,26 +759,26 @@ const emit = defineEmits(['a', 'b'])
         objectLiteral: { a: number }
         fn: (n: number) => void
         functionRef: Function
-        objectRef: Object
-        dateTime: Date
-        array: string[]
-        arrayRef: Array<any>
+        Object
+        Date
+        string[]
+        Array<any>
         tuple: [number, number]
-        set: Set<string>
+        Set<string>
         literal: 'foo'
         optional?: any
-        recordRef: Record<string, null>
+        Record<string, null>
         interface: Test
-        alias: Alias
+        Alias
         method(): void
         symbol: symbol
 
-        union: string | number
-        literalUnion: 'foo' | 'bar'
-        literalUnionNumber: 1 | 2 | 3 | 4 | 5
-        literalUnionMixed: 'foo' | 1 | boolean
-        intersection: Test & {}
-        foo: ((item: any) => boolean) | null
+        string | number
+        'foo' | 'bar'
+        1 | 2 | 3 | 4 | 5
+        'foo' | 1 | boolean
+        Test & {}
+        ((item: any) => boolean) | null
       }>()
       </script>`)
       assertCode(content)
