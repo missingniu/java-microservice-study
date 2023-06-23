@@ -9,7 +9,6 @@
       <module fileurl="file://$PROJECT_DIR$/gift-dependcies-parent/gift-dependcies-common/gift-dependcies-common.iml" filepath="$PROJECT_DIR$/gift-dependcies-parent/gift-dependcies-common/gift-dependcies-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/gift-dependcies-parent/gift-dependcies-core/gift-dependcies-core.iml" filepath="$PROJECT_DIR$/gift-dependcies-parent/gift-dependcies-core/gift-dependcies-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/gift-dependcies-parent/gift-dependcies-parent.iml" filepath="$PROJECT_DIR$/gift-dependcies-parent/gift-dependcies-parent.iml" />
-      <module fileurl="file://$PROJECT_DIR$/gift-dependcies-parent/gift-dependcies-service/gift-dependcies-service.iml" filepath="$PROJECT_DIR$/gift-dependcies-parent/gift-dependcies-service/gift-dependcies-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/gift-support-parent/gift-eruka-service-10030/gift-eruka-service-10030.iml" filepath="$PROJECT_DIR$/gift-support-parent/gift-eruka-service-10030/gift-eruka-service-10030.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/gift-microservice-ljz.iml" filepath="$PROJECT_DIR$/.idea/gift-microservice-ljz.iml" />
       <module fileurl="file://$PROJECT_DIR$/gift-parent-test/gift-parent-test.iml" filepath="$PROJECT_DIR$/gift-parent-test/gift-parent-test.iml" />

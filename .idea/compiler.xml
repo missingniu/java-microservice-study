@@ -15,7 +15,6 @@
         <module name="gift-zuul-service-10040" />
         <module name="gift-user-test" />
         <module name="gift-dependcies-core" />
-        <module name="gift-dependcies-service" />
         <module name="gift-eruka-service-10030" />
         <module name="gift-eruka-service-10020" />
         <module name="gift-user-service-20010" />
