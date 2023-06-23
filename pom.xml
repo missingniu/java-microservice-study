@@ -15,6 +15,7 @@
         <module>gift-dependcies-parent</module>
         <module>gift-parent-test</module>
         <module>gift-user-parent</module>
+        <module>gift-auth-parent</module>
 
 
     </modules>

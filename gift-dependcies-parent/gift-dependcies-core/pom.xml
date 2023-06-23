@@ -11,11 +11,11 @@
 
     <artifactId>gift-dependcies-core</artifactId>
     <dependencies>
-        <dependency>
-            <groupId>groupId</groupId>
-            <artifactId>gift-dependices-service</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>groupId</groupId>-->
+<!--            <artifactId>gift-dependices-service</artifactId>-->
+<!--            <version>1.0-SNAPSHOT</version>-->
+<!--        </dependency>-->
         <!--mybatisplusjar-->
         <dependency>
             <groupId>com.baomidou</groupId>

@@ -2807,7 +2807,7 @@ class SyncWalker extends WalkerBase {
 				const value = node[key];
 
 				if (typeof value !== "object") {
-					continue;
+
 				} else if (Array.isArray(value)) {
 					for (let i = 0; i < value.length; i += 1) {
 						if (value[i] !== null && typeof value[i].type === 'string') {
@@ -9343,7 +9343,7 @@ function extractRuntimeEmits(node, emits) {
                 extractEventNames(t.parameters[0], emits);
             }
         }
-        return;
+
     }
     else {
         extractEventNames(node.parameters[0], emits);
@@ -17012,7 +17012,7 @@ tokenTypes.combinator = combinator$1;
 	    while (searchPosition < this.tokens.length) {
 	      if (WHITESPACE_EQUIV_TOKENS[this.tokens[searchPosition][_tokenize.FIELDS.TYPE]]) {
 	        searchPosition++;
-	        continue;
+
 	      } else {
 	        return searchPosition;
 	      }
@@ -17134,7 +17134,7 @@ tokenTypes.combinator = combinator$1;
 	        }).then(resolve, reject);
 	      } catch (e) {
 	        reject(e);
-	        return;
+
 	      }
 	    });
 	  };

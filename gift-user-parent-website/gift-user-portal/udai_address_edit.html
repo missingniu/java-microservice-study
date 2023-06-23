@@ -158,7 +158,7 @@
 													$('.addr-linkage select[name="town"]').append(
 														'<option value="' + data[i] + '">' + data[i] + '</option>'
 													);
-												};
+												}
 												$('.addr-linkage select[name="town"]').find('option[value="洪山镇"]').prop("selected", "selected");
 											},
 										};
@@ -167,7 +167,7 @@
 											$.ajax(ajaxConfig)
 										});
 									}
-								};
+								}
 								$('.addr-linkage').citys({
 									// 如果某天这个仓库地址失效了dataUrl请使用本地 2017.10 的数据 'js/data_location/list.json'
 									dataUrl: 'http://passer-by.com/data_location/list.json',
