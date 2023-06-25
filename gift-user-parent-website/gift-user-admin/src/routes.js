@@ -18,8 +18,8 @@ import Role from "./views/auth/Role";
 import Employee from "./views/org/Employee";
 import Menu from "./views/auth/Menu";
 import config from "./views/sys/config";
-import dictionary from "./views/sys/dictionary";
-import dictionaryItem from "./views/sys/dictionaryItem";
+// import dictionary from "./views/sys/dictionary";
+// import dictionaryItem from "./views/sys/dictionaryItem";
 import ProductType from "./views/prod/ProductType";
 import Product from "./views/prod/Product";
 import BusinessActivity from "./views/mkt/BusinessActivity";
@@ -27,10 +27,20 @@ import Clue from "./views/mkt/Clue";
 import Order from "./views/order/Order";
 import Contract from "./views/order/Contract";
 import Business from "./views/mkt/Business";
+import Tenant from "./views/sys/Tenant";
+import Meal from "./views/sys/Meal";
+import TenantType from "./views/sys/TenantType";
+import ShopRegister from "./views/ShopRegister";
 let routes = [
     {
         path: '/login',
         component: Login,
+        name: '',
+        hidden: true
+    },
+    {
+        path: '/shopRegister',
+        component: ShopRegister,
         name: '',
         hidden: true
     },
@@ -57,59 +67,62 @@ let routes = [
         iconCls: 'el-icon-message',//图标样式class
         children: [
             { path: '/department', component: Department, name: '用户管理'},
-            { path: '/employee', component: Employee, name: '用户地址' },
-            { path: '/employee', component: Employee, name: '成长记录' },
-            { path: '/employee', component: Employee, name: '用户详情' },
-            { path: '/employee', component: Employee, name: '用户真实信息' },
+            { path: '/address', component: Employee, name: '用户地址' },
+            { path: '/growLog', component: Employee, name: '成长记录' },
+            { path: '/userDetail', component: Employee, name: '用户详情' },
+            { path: '/userRealInfo', component: Employee, name: '用户真实信息' },
             { path: '/employee', component: Employee, name: '员工管理' },
 
         ]
     },
-    {
-        path: '/',
-        component: Home,
-        name: '权限管理',
-        iconCls: 'el-icon-message',//图标样式class
-        children: [
-            { path: '/permission', component: Permission, name: '权限列表'},
-            { path: '/menu', component: Menu, name: '菜单管理' },
-            { path: '/role', component: Role, name: '角色列表'},
-        ]
-    },
+    // {
+    //     path: '/',
+    //     component: Home,
+    //     name: '权限管理',
+    //     iconCls: 'el-icon-message',//图标样式class
+    //     children: [
+    //         { path: '/permission', component: Permission, name: '权限列表'},
+    //         { path: '/menu', component: Menu, name: '菜单管理' },
+    //         { path: '/role', component: Role, name: '角色列表'},
+    //     ]
+    // },
 
     {
         path: '/',
         component: Home,
-        name: '产品管理',
+        name: '系统管理',
         iconCls: 'el-icon-message',//图标样式class
         children: [
-            { path: '/productType', component: ProductType, name: '产品类型' },
-            { path: '/product', component: Product, name: '产品列表' },
-            { path: '/form', component: Form, name: 'Form' },
-            { path: '/user', component: user, name: '列表' },
+            { path: '/productType', component: ProductType, name: '系统配置' },
+            { path: '/product', component: Product, name: '员工管理' },
+            { path: '/form', component: Form, name: '部门管理' },
+            { path: '/meal', component: Meal, name: '套餐管理' },
+            { path: '/tenant', component: Tenant, name: '租户管理' },
+            { path: '/tenantType', component: TenantType, name: '租户类型' },
+
         ]
     },
-    {
-        path: '/',
-        component: Home,
-        name: '营销模块',
-        iconCls: 'fa fa-id-card-o',
-        children: [
-            { path: '/businessActivity', component: BusinessActivity, name: '市场活动' },
-            { path: '/clue', component: Clue, name: '线索管理' },
-            {path:'/business',component: Business,name:'商机'},
-        ]
-    },
-    {
-        path: '/',
-        component: Home,
-        name: '订单模块',
-        iconCls: 'fa fa-id-card-o',
-        children: [
-            { path: '/order', component: Order, name: '订单管理' },
-            { path: '/contract', component: Contract, name: '合同管理' }
-        ]
-    },
+    // {
+    //     path: '/',
+    //     component: Home,
+    //     name: '营销模块',
+    //     iconCls: 'fa fa-id-card-o',
+    //     children: [
+    //         { path: '/businessActivity', component: BusinessActivity, name: '市场活动' },
+    //         { path: '/clue', component: Clue, name: '线索管理' },
+    //         {path:'/business',component: Business,name:'商机'},
+    //     ]
+    // },
+    // {
+    //     path: '/',
+    //     component: Home,
+    //     name: '订单模块',
+    //     iconCls: 'fa fa-id-card-o',
+    //     children: [
+    //         { path: '/order', component: Order, name: '订单管理' },
+    //         { path: '/contract', component: Contract, name: '合同管理' }
+    //     ]
+    // },
 
 
     {

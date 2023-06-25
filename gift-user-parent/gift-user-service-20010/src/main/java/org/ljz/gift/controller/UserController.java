@@ -1,14 +1,18 @@
 package org.ljz.gift.controller;
 
-import com.baomidou.mybatisplus.plugins.Page;
+import org.ljz.gift.dto.RegisterDTO;
 import org.ljz.gift.service.IUserService;
 import org.ljz.gift.domain.User;
 import org.ljz.gift.query.UserQuery;
+import com.baomidou.mybatisplus.plugins.Page;
+import org.ljz.gift.service.IVerifyCodeService;
 import org.ljz.gift.util.AjaxResult;
 import org.ljz.gift.util.PageList;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.support.PagedListHolder;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -16,7 +20,8 @@ import java.util.List;
 public class UserController {
     @Autowired
     public IUserService userService;
-
+    @Autowired
+    public IVerifyCodeService verifyCodeService;
 
     /**
      * 保存和修改公用的
@@ -104,5 +109,15 @@ public class UserController {
         page = userService.selectPage(page);
         PageList pageList = new PageList<User>(page.getTotal(),page.getRecords());
         return AjaxResult.me().setResultObj(pageList);
+    }
+    @PostMapping("/verify/{mobilePhone}")
+    public AjaxResult sendVerifyCode(@PathVariable("mobilePhone") String mobilePhone){
+       return userService.sendVerifyCodeByPhone(mobilePhone);
+
+    }
+    @PostMapping("/register/phone")
+    public AjaxResult register(@Valid @RequestBody RegisterDTO dto){
+       return userService.registerByPhone(dto);
+
     }
 }

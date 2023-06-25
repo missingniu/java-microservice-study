@@ -2,6 +2,7 @@ package org.ljz.gift.mapper;
 
 import org.ljz.gift.domain.User;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
+import org.springframework.stereotype.Repository;
 
 /**
  * <p>
@@ -9,8 +10,9 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
  * </p>
  *
  * @author ljz
- * @since 2023-06-20
+ * @since 2023-06-23
  */
+@Repository
 public interface UserMapper extends BaseMapper<User> {
 
 }

@@ -1,4 +1,4 @@
-axios.defaults.baseURL = "http://localhost:10030/services";
+axios.defaults.baseURL = "http://127.0.0.1:10040/services";
 Vue.prototype.$http = axios;
 
 

@@ -13,9 +13,15 @@
 	<script src="js/jquery.form.js" charset="UTF-8"></script>
 	<script src="js/global.js" charset="UTF-8"></script>
 	<script src="js/login.js" charset="UTF-8"></script>
+	<script src="plugins/vue/dist/vue.js"></script>
+	<script src="plugins/axios/dist/axios.js"></script>
+	<script src="js/common.js"></script>
 	<title>XXX - 登录 / 注册</title>
 </head>
 <body>
+<div id="root">
+
+
 	<div class="public-head-layout container">
 		<a class="logo" href="index.html"><img src="images/icons/logo.jpg" alt="XXX" class="cover"></a>
 	</div>
@@ -32,7 +38,7 @@
 								<div class="input-group-addon">
 									<span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
 								</div>
-								<input class="form-control phone" name="phone" id="login_phone" required placeholder="手机号" maxlength="11" autocomplete="off" type="text">
+								<input class="form-control phone" name="phone" v-model="registerDTO.mobilePhone" id="login_phone" required placeholder="手机号" maxlength="11" autocomplete="off" type="text">
 							</div>
 						</div>
 						<div class="form-group">
@@ -48,7 +54,7 @@
 	                        <label>
 	                        	<input checked="" id="login_checkbox" type="checkbox"><i></i> 30天内免登录
 	                        </label>
-	                        <a href="javascript:" class="pull-right" id="resetpwd">忘记密码？</a>
+	                        <a href="javascript:;" class="pull-right" id="resetpwd">忘记密码？</a>
 	                    </div>
 	                    <!-- 错误信息 -->
 						<div class="form-group">
@@ -62,7 +68,7 @@
 							</div>
 						</div>
 	                    <button class="btn btn-large btn-primary btn-lg btn-block submit" id="login_submit" type="button">登录</button><br>
-	                    <p class="text-center">没有账号？<a href="javascript:" id="register">免费注册</a></p>
+	                    <p class="text-center">没有账号？<a href="javascript:;" id="register">免费注册</a></p>
                     </form>
                     <div class="tabs_div">
 	                    <div class="success-box">
@@ -85,7 +91,7 @@
 			</div>
 			<div class="form-box register">
   				<div class="tabs-nav">
-  					<h2>欢迎注册<a href="javascript:" class="pull-right fz16" id="reglogin">返回登录</a></h2>
+  					<h2>欢迎注册<a href="javascript:;" class="pull-right fz16" id="reglogin">返回登录</a></h2>
   				</div>
   				<div class="tabs_container">
 					<form class="tabs_form" action="index.html" method="post" id="register_form">
@@ -94,14 +100,14 @@
 								<div class="input-group-addon">
 									<span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
 								</div>
-								<input class="form-control phone" name="phone" id="register_phone" required placeholder="手机号" maxlength="11" autocomplete="off" type="text">
+								<input class="form-control phone" name="phone" id="register_phone" v-model="registerDTO.mobilePhone" placeholder="手机号" maxlength="11" autocomplete="off" type="text">
 							</div>
 						</div>
 						<div class="form-group">
 							<div class="input-group">
-								<input class="form-control" name="smscode" id="register_sms" placeholder="输入验证码" type="text">
+								<input class="form-control" name="smscode" id="register_sms" v-model="registerDTO.verifyCode" placeholder="输入验证码" type="text">
 								<span class="input-group-btn">
-									<button class="btn btn-primary getsms" type="button">发送短信验证码</button>
+									<button class="btn btn-primary getsms" type="button" @click="sendVerifyCode">发送短信验证码</button>
 								</span>
 							</div>
 						</div>
@@ -110,7 +116,7 @@
 								<div class="input-group-addon">
 									<span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
 								</div>
-								<input class="form-control password" name="password" id="register_pwd" placeholder="请输入密码" autocomplete="off" type="password">
+								<input class="form-control password" name="password" id="register_pwd" v-model="registerDTO.password" placeholder="请输入密码" autocomplete="off" type="password">
 								<div class="input-group-addon pwd-toggle" title="显示密码"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></div>
 							</div>
 						</div>
@@ -123,7 +129,7 @@
 						<div class="form-group">
 							<div class="error_msg" id="register_error"></div>
 						</div>
-	                    <button class="btn btn-large btn-primary btn-lg btn-block submit" id="register_submit" type="button">注册</button>
+	                    <button class="btn btn-large btn-primary btn-lg btn-block submit" id="register_submit" type="button" @click="register">注册</button>
                     </form>
                     <div class="tabs_div">
 	                    <div class="success-box">
@@ -146,7 +152,7 @@
 			</div>
 			<div class="form-box resetpwd">
   				<div class="tabs-nav clearfix">
-  					<h2>找回密码<a href="javascript:" class="pull-right fz16" id="pwdlogin">返回登录</a></h2>
+  					<h2>找回密码<a href="javascript:;" class="pull-right fz16" id="pwdlogin">返回登录</a></h2>
   				</div>
   				<div class="tabs_container">
 					<form class="tabs_form" action="https://rpg.blue/member.php?mod=logging&action=login" method="post" id="resetpwd_form">
@@ -155,14 +161,14 @@
 								<div class="input-group-addon">
 									<span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
 								</div>
-								<input class="form-control phone" name="phone" id="resetpwd_phone" required placeholder="手机号" maxlength="11" autocomplete="off" type="text">
+								<input class="form-control phone" name="phone" id="resetpwd_phone" v-model="registerDTO.mobilePhone" required placeholder="手机号" maxlength="11" autocomplete="off" type="text">
 							</div>
 						</div>
 						<div class="form-group">
 							<div class="input-group">
-								<input class="form-control" name="sms" id="resetpwd_sms" placeholder="输入验证码" type="text">
+								<input class="form-control" name="sms" id="resetpwd_sms" v-model="registerDTO.verifyCode" placeholder="输入验证码" type="text">
 								<span class="input-group-btn">
-									<button class="btn btn-primary getsms" type="button">发送短信验证码</button>
+									<button class="btn btn-primary getsms" type="button" @click="sendVerifyCode">发送短信验证码</button>
 								</span>
 							</div>
 						</div>
@@ -207,7 +213,7 @@
 						case 'register': $('.register').show(); break;
 						case 'resetpwd': $('.resetpwd').show(); break;
 						default: $('.login').show();
-					}
+					};
 					// 发送验证码事件
 					$('.getsms').click(function() {
 						var phone = $(this).parents('form').find('input.phone');
@@ -274,5 +280,48 @@
 			ICP备案证书号：闽ICP备XXX号-2&nbsp;&nbsp;&nbsp;&nbsp;福建省宁德市XXX&nbsp;&nbsp;&nbsp;&nbsp;Tel: XXX&nbsp;&nbsp;&nbsp;&nbsp;E-mail: XXX@qq.com
 		</p>
 	</div>
+</div>
+<script>
+	new Vue({
+		el:"#root",
+		data:{
+
+			registerDTO:{
+				mobilePhone:"",
+				verifyCode:"",
+				password:"",
+			}
+		},
+		methods : {
+			sendVerifyCode(){
+				//发送验证码
+				this.$http.post("/user/user/verify/"+this.registerDTO.mobilePhone).then(result=>{
+					result = result.data;
+					if(result.success){
+						alert("验证码发送成功，五分钟内有效")
+					}else{
+						alert("网络错误")
+					}
+				})
+			},
+			register(){
+				//注册
+				this.$http.post("/user/user/register/phone",this.registerDTO)
+				.then(result=>{
+					result = result.data;
+					if(result.success){
+						alert("注册成功");
+						location.href = "./login.html"
+					}else{
+						alert("网络错误");
+					}
+				})
+			}
+		},
+		mounted(){
+
+		}
+	})
+</script>
 </body>
 </html>
