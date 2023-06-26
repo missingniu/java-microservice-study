@@ -40,7 +40,7 @@ public interface ${entity}Client {
      * @return
      */
     @RequestMapping("/list")
-    public List<${entity}> list();
+    List<${entity}> list();
 
     /**
      * 分页查询数据

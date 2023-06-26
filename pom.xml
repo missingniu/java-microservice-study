@@ -12,14 +12,21 @@
         <module>gift-basic-parent</module>
         <module>gift-support-parent</module>
         <module>gift-user-test</module>
+        <module>gift-dependcies-parent</module>
+        <module>gift-parent-test</module>
+        <module>gift-user-parent</module>
+        <module>gift-auth-parent</module>
+        <module>gift-sys-parent</module>
+
+
     </modules>
     <!--管理一些公共的属性-->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <mysql.version>5.1.47</mysql.version>
     </properties>
-
     <!--管理SpringBoot-->
     <parent>
         <groupId> org.springframework.boot</groupId>
@@ -49,12 +56,12 @@
             <version>4.12</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
-<!--        <dependency>-->
-<!--            <groupId>cn.hutool</groupId>-->
-<!--            <artifactId>hutool-all</artifactId>-->
-<!--            <version>5.8.5</version>-->
-<!--        </dependency>-->
+<!--         https://mvnrepository.com/artifact/cn.hutool/hutool-all-->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.8.5</version>
+        </dependency>
 
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -62,6 +69,7 @@
             <version>1.18.8</version>
             <scope>provided</scope>
         </dependency>
+
 
     </dependencies>
 </project>

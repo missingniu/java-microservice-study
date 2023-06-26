@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>gift-user-parent</artifactId>
+        <groupId>groupId</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>gift-user-common</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>groupId</groupId>
+            <artifactId>gift-dependcies-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!--mybatisplusjar 不能直接导入starter,里面mybatisplus自动配置,
+        需要依赖于一些配置,这个模块并没有做mybatis相关配置,会报错!
+        只需要导入里面核心jar,让domain不报错而已
+        -->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus</artifactId>
+            <version>2.2.0</version>
+        </dependency>
+    </dependencies>
+
+</project>

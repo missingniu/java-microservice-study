@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/gift-basic-parent/gift-basic-common/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/gift-support-parent/gift-config-service-10010/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/gift-support-parent/gift-eruka-service-10030/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/gift-support-parent/gift-zuul-service-10040/src/main/java" charset="UTF-8" />
-  </component>
-</project>
