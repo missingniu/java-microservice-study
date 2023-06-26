@@ -2,6 +2,8 @@ package org.ljz.gift.service;
 
 import org.ljz.gift.domain.User;
 import com.baomidou.mybatisplus.service.IService;
+import org.ljz.gift.dto.RegisterDTO;
+import org.ljz.gift.util.AjaxResult;
 
 /**
  * <p>
@@ -9,8 +11,11 @@ import com.baomidou.mybatisplus.service.IService;
  * </p>
  *
  * @author ljz
- * @since 2023-06-20
+ * @since 2023-06-23
  */
 public interface IUserService extends IService<User> {
 
+    AjaxResult sendVerifyCodeByPhone(String mobilePhone);
+
+    AjaxResult registerByPhone(RegisterDTO dto);
 }

@@ -1,19 +1,19 @@
 package org.ljz.gift.util;
 
+import org.ljz.gift.exception.ResponseCode;
+
 //Ajax请求响应对象的类
 public class AjaxResult {
-    private boolean success = true;
-    private String message = "操作成功!";
+    private Integer code = ResponseCode.RESPONSE_CODE_200.getCode();
+    private Boolean success = true;
+    private String message = ResponseCode.RESPONSE_CODE_200.getMessage();
+    private Object resultObject;
 
-
-    //返回到前台对象
-    private Object resultObj;
-
-    public boolean isSuccess() {
+    public Boolean getSuccess() {
         return success;
     }
 
-    public AjaxResult setSuccess(boolean success) {
+    public AjaxResult setSuccess(Boolean success) {
         this.success = success;
         return this;
     }
@@ -28,31 +28,24 @@ public class AjaxResult {
     }
 
     public Object getResultObj() {
-        return resultObj;
+        return resultObject;
     }
 
-    public AjaxResult setResultObj(Object resultObj) {
-        this.resultObj = resultObj;
+    public AjaxResult setResultObj(Object resultObject) {
+        this.resultObject = resultObject;
         return this;
     }
 
-    //AjaxResult.me()成功
-    //AjaxResult.me().setMessage()成功
-    //AjaxResult.me().setSuccess(false),setMessage("失败");
-    public  static AjaxResult me(){
+    public static AjaxResult me() {
         return new AjaxResult();
     }
 
-
-
-    /*
-    //成功
-    public AjaxResult() {
+    public Integer getCode() {
+        return code;
     }
 
-    //失败并且有提示
-    public AjaxResult(String message) {
-        this.success = false;
-        this.message = message;
-    }*/
+    public AjaxResult setCode(Integer code) {
+        this.code = code;
+        return this;
+    }
 }

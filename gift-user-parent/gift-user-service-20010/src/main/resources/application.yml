@@ -1,3 +1,6 @@
 spring:
   application:
     name: gift-user
+  mybatis-plus:
+    configuration:
+      log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

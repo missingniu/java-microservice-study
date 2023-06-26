@@ -11,13 +11,13 @@ import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 import java.util.*;
 
 /**
- * Created by CDHong on 2018/4/6.
+ * Created by ljz on new date().
  */
 public class GenteratorCode {
 
     public static void main(String[] args) throws InterruptedException {
         //用来获取Mybatis-Plus.properties文件的配置信息
-        ResourceBundle rb = ResourceBundle.getBundle("mybatisplus-config-auth"); //不要加后缀
+        ResourceBundle rb = ResourceBundle.getBundle("mybatisplus-config-user"); //不要加后缀
         AutoGenerator mpg = new AutoGenerator();
         // 全局配置
         GlobalConfig gc = new GlobalConfig();
@@ -42,7 +42,7 @@ public class GenteratorCode {
         StrategyConfig strategy = new StrategyConfig();
         strategy.setTablePrefix("t_");// 此处可以修改为您的表前缀
         strategy.setNaming(NamingStrategy.underline_to_camel);// 表名生成策略
-        strategy.setInclude("t_permission","t_login_user","t_role","t_post","t_menu","t_user_login_log"); // 需要生成的表
+        strategy.setInclude("t_user","t_user_address","t_user_grow_log","t_user_info","t_user_real_info"); // 需要生成的表
         mpg.setStrategy(strategy);
         // 包配置
         PackageConfig pc = new PackageConfig();

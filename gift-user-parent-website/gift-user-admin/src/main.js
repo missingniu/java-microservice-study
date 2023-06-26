@@ -16,11 +16,23 @@ import 'font-awesome/css/font-awesome.min.css'
 // 引入axios,因为后续我们需要通过axios调用后端接口
 import axios from "axios"
 import {Message} from "element-ui"
-// 在main.js中给axios配置一个全局的统一的前缀
-axios.defaults.baseURL = "http://127.0.0.1:8080/"
+// 在main.js中给axios配置一个全局的统一的前缀,改成网关地址
+axios.defaults.baseURL = "http://127.0.0.1:10040/services"
 //axios.defaults.baseURL = "http://47.109.93.239:8080/"
 //在main.js中
 //Vue.prototype.$hostURL='http://localhost:8080'
+// 导入百度地图
+import BaiduMap from 'vue-baidu-map'
+Vue.use(BaiduMap, {
+    ak: 'QtL5wcGDYGRIdI5d8M8KBz1tAttKW7uB'
+})
+
+Vue.use(ElementUI)
+Vue.use(VueRouter)
+Vue.use(Vuex)
+
+//NProgress.configure({ showSpinner: false });
+
 
 Vue.prototype.$http = axios;  // 将axios交给vue,通过vue来进行使用
 Vue.use(ElementUI)
